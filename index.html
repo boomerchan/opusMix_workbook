@@ -93,6 +93,9 @@
         <li style="float:left"><textarea placeholder="masterpiece, best quality, 1girl, arms behind back" cols="10" rows="1" style="font-size: 12px"></textarea></li>
     </ul>
 
+    <br>
+    <p>Quick explanation: Most (if not all) of the following images were generated with the following prompt: <code style="background-color:black;">&lt;lora:add_detail:0.4&gt; (anime), 1girl, {prompt word}</code><br>I selected the first seed that represented the subject properly. You could do much better with more prompting and refining. This workbook is meant to be used as a reference, not a showcase.</p>
+
     <!-- Artists -->
     <section id="artists">
         <div style="overflow-x:auto;" id="artistsContent"></div>
@@ -128,12 +131,12 @@
         <div style="overflow-x:auto;" id="attireFootwearContent"></div>
     </section>
 
-    <!-- Attire > Footwear >  -->
+    <!-- Attire > Patterns -->
     <section id="pattern">
         <div style="overflow-x:auto;" id="attirePatternContent"></div>
     </section>
 
-    <!-- Character Styles >  -->
+    <!-- Characters -->
     <section id="characters">
         <div style="overflow-x:auto;" id="charactersContent"></div>
     </section>
@@ -298,6 +301,6 @@
         xhrCharacter.open('GET', 'csv/characters.csv', true);
         xhrCharacter.send();
     </script>
-    <p>Made by Boomer with ChatGPT for <a href="https://civitai.com/models/146212/opusmix">opusMix</a>. Copyright is for nerds. v1.0.2</p>
+    <p style="text-align:center;font-size:10px;">Made by Boomer with the help of ChatGPT for <a style="color:#E1CD00" href="https://civitai.com/models/146212/opusmix">opusMix</a>. Copyright is for nerds. v1.0.3</p>
 </body>
 </html>
