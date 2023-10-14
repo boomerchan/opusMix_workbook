@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>SD Workbook</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-</head>
-<body style="background-color: #140000; color: white; font-family: sans-serif;">
-<center><label>stretch me <3</label><br>
-<textarea rows="1" cols="1" style="background-color: black; color: white;"></textarea></center>
+
 <style>
+    aside {
+        position: fixed;
+    }
     h1, h2, h3 {
         color: #E1CD00;
     }
-    th {
-        font-size: 16px; background-color: black;
+    textarea, th {
+        font-size: 16px; background-color: black; color: white; border-color: black;
+    }
+    td > textarea {
+        text-align: center;
+    }
+    th > textarea {
+        text-align: center;
+    }
+    td > details > summary {
+        list-style: none;
+    }
+    td > details > summary::-webkit-details-marker {
+        display: none;
     }
 </style>
 
-<h1 style="font-size: 64px; margin-bottom: 8px;"><center>Artists</center></h1>
+<head>
+    <title>Workbook</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+
+<body style="background-color: #140000; color: white; font-family: sans-serif;">
+
+    <textarea placeholder="masterpiece, best quality, 1girl, arms behind back" rows="1" cols="75" style="position: fixed; bottom: 0; right: 0;"></textarea>
+    <br>
+
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Artists</center></h1>
 <div style="overflow-x:auto;">
     <table style="width:100%;">
         <tr>
-            <th><code>Abigail Larson</code></th>
-            <th><code>Akira Toriyama</code></th>
-            <th><code>Andreas Rocha</code></th>
-            <th><code>Andy Kehoe</code></th>
-            <th><code>Anton Semenov</code></th>
-            <th><code>Bastien Lecouffe-Deharme</code></th>
-            <th><code>Brian Froud</code></th>
-            <th><code>Bruce Pennington</code></th>
+            <th><textarea disabled rows="1">Abigail Larson</textarea></th>
+            <th><textarea disabled rows="1">Akira Toriyama</textarea></th>
+            <th><textarea disabled rows="1">Andreas Rocha</textarea></th>
+            <th><textarea disabled rows="1">Andy Kehoe</textarea></th>
+            <th><textarea disabled rows="1">Anton Semenov</textarea></th>
+            <th><textarea disabled rows="1">Bastien Lecouffe-Deharme</textarea></th>
+            <th><textarea disabled rows="1">Brian Froud</textarea></th>
+            <th><textarea disabled rows="1">Bruce Pennington</textarea></th>
         </tr>
         <tr>
-            <td><img height="340px" src=images/opusMix_20231012091623_871959_e25e39_732157674.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012091705_076248_917359_3708591938.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012091746_620284_5d9ad7_1603360909.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012091827_481733_0a47b7_595812675.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012091907_986742_673462_4239741396.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012091949_125230_bd64d3_3588564183.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012092031_063292_cd6458_2572112604.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012092112_200326_e00e66_2002998922.jpg></img></td>
+            <td><img height="340px" src=images/artists/Abigail_Larson.jpg></img></td>
+            <td><img height="340px" src=images/artists/Akira_Toriyama.jpg></img></td>
+            <td><img height="340px" src=images/artists/Andreas_Rocha.jpg></img></td>
+            <td><img height="340px" src=images/artists/Andy_Kehoe.jpg></img></td>
+            <td><img height="340px" src=images/artists/Anton_Semenov.jpg></img></td>
+            <td><img height="340px" src=images/artists/Bastien_Lecouffe-Deharme.jpg></img></td>
+            <td><img height="340px" src=images/artists/Brian_Froud.jpg></img></td>
+            <td><img height="340px" src=images/artists/Bruce_Pennington.jpg></img></td>
         </tr>
         <tr>
-            <th><code>Clive Barker</code></th>
-            <th><code>Darek Zabrocki</code></th>
-            <th><code>Frank Frazetta</code></th>
-            <th><code>Gerald Brom</code></th>
-            <th><code>Greg Rutkowski</code></th>
-            <th><code>HR Giger</code></th>
-            <th><code>Hayao Miyazaki</code></th>
-            <th><code>Ilya Kuvshinov</code></th>
+            <th><textarea disabled rows="1">Clive Barker</textarea></th>
+            <th><textarea disabled rows="1">Darek Zabrocki</textarea></th>
+            <th><textarea disabled rows="1">Frank Frazetta</textarea></th>
+            <th><textarea disabled rows="1">Gerald Brom</textarea></th>
+            <th><textarea disabled rows="1">Greg Rutkowski</textarea></th>
+            <th><textarea disabled rows="1">HR Giger</textarea></th>
+            <th><textarea disabled rows="1">Hayao Miyazaki</textarea></th>
+            <th><textarea disabled rows="1">Ilya Kuvshinov</textarea></th>
         </tr>
         <tr>
             <td><img height="340px" src=images/opusMix_20231012092153_083771_a4441a_796822037.jpg></img></td>
@@ -60,14 +79,14 @@
             <td><img height="340px" src=images/opusMix_20231012092628_091357_848d48_473477007.jpg></img></td>
         </tr>
         <tr>
-            <th><code>Ismail Inceoglu</code></th>
-            <th><code>James C. Christensen</code></th>
-            <th><code>Jean-Baptiste Monge</code></th>
-            <th><code>Jorge Jacinto</code></th>
-            <th><code>Junko Mizuno</code></th>
-            <th><code>Makoto Shinkai</code></th>
-            <th><code>Masamune Shirow</code></th>
-            <th><code>Naoto Hattori</code></th>
+            <th><textarea disabled rows="1">Ismail Inceoglu</textarea></th>
+            <th><textarea disabled rows="1">James C. Christensen</textarea></th>
+            <th><textarea disabled rows="1">Jean-Baptiste Monge</textarea></th>
+            <th><textarea disabled rows="1">Jorge Jacinto</textarea></th>
+            <th><textarea disabled rows="1">Junko Mizuno</textarea></th>
+            <th><textarea disabled rows="1">Makoto Shinkai</textarea></th>
+            <th><textarea disabled rows="1">Masamune Shirow</textarea></th>
+            <th><textarea disabled rows="1">Naoto Hattori</textarea></th>
         </tr>
         <tr>
             <td><img height="340px" src=images/opusMix_20231012092707_262484_4bf643_1046164157.jpg></img></td>
@@ -80,14 +99,14 @@
             <td><img height="340px" src=images/opusMix_20231012093142_218496_8ec708_575721448.jpg></img></td>
         </tr>
         <tr>
-            <th><code>Peter Mohrbacher</code></th>
-            <th><code>Raymond Swanland</code></th>
-            <th><code>Rodney Matthews</code></th>
-            <th><code>Santiago Caruso</code></th>
-            <th><code>Seb McKinnon</code></th>
-            <th><code>Stephan Martiniere</code></th>
-            <th><code>Stephen Hickman</code></th>
-            <th><code>Tyler Edlin</code></th>
+            <th><textarea disabled rows="1">Peter Mohrbacher</textarea></th>
+            <th><textarea disabled rows="1">Raymond Swanland</textarea></th>
+            <th><textarea disabled rows="1">Rodney Matthews</textarea></th>
+            <th><textarea disabled rows="1">Santiago Caruso</textarea></th>
+            <th><textarea disabled rows="1">Seb McKinnon</textarea></th>
+            <th><textarea disabled rows="1">Stephan Martiniere</textarea></th>
+            <th><textarea disabled rows="1">Stephen Hickman</textarea></th>
+            <th><textarea disabled rows="1">Tyler Edlin</textarea></th>
         </tr>
         <tr>
             <td><img height="340px" src=images/opusMix_20231012093221_534790_6a79f7_3070214436.jpg></img></td>
@@ -102,92 +121,276 @@
     </table>
 </div>
 
-<h1 style="font-size: 64px; margin-bottom: 8px;"><center>Character Styles</center></h1>
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Attire > Shirts and Topwear</center></h1>
 <div style="overflow-x:auto;">
     <table style="width:100%;">
         <tr>
-            <th><code>Aiko</code></th>
-            <th><code>Brittany</code></th>
-            <th><code>C</code></th>
-            <th><code>D</code></th>
-            <th><code>Eli ♂</code></th>
-            <th><code>Fumiko</code></th>
-            <th><code>Genevieve</code></th>
-            <th><code>Hina</code></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
         </tr>
         <tr>
-            <td><img height="340px" src=images/opusMix_20231012112616_470531_735a0b_110810313.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012112759_572035_e8354e_110810313.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012114858_371846_8f51d2_110810313.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012112942_687343_969f92_110810313.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012113126_591519_86655f_110810313.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012113312_640815_92d178_110810313.jpg></img></td>
-        </tr>
-        <tr>
-            <th><code>Ivy</code></th>
-            <th><code>Joy</code></th>
-            <th><code>Kira</code></th>
-            <th><code>L</code></th>
-            <th><code>M</code></th>
-            <th><code>N</code></th>
-            <th><code>Ophelia</code></th>
-            <th><code>Pyrti</code></th>
-        </tr>
-        <tr>
-            <td><img height="340px" src=images/opusMix_20231012113457_314567_ab794f_110810313.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012113643_499449_573dca_110810313.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012113829_493646_efd4a1_110810313.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012114015_435809_a25bd7_110810313.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012114200_342097_99689e_110810313.jpg></img></td>
-        </tr>
-        <tr>
-            <th><code>Q</code></th>
-            <th><code>Rin</code></th>
-            <th><code>Satsuki</code></th>
-            <th><code>T</code></th>
-            <th><code>U</code></th>
-            <th><code>V</code></th>
-            <th><code>W</code></th>
-            <th><code>Xena</code></th>
-        </tr>
-        <tr>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012114343_722041_4868d3_110810313.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012114528_129424_0bc10c_110810313.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/opusMix_20231012114712_926224_143cf9_110810313.jpg></img></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th><code>Y</code></th>
-            <th><code>Z</code></th>
-            <th><code>~</code></th>
-            <th><code>~</code></th>
-            <th><code>~</code></th>
-            <th><code>~</code></th>
-            <th><code>~</code></th>
-            <th><code>~</code></th>
-        </tr>
-        <tr>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
-            <td><img height="340px" src=images/placeholder.jpg></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
         </tr>
     </table>
 </div>
+
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Attire > Pants and Bottomwear</center></h1>
+<div style="overflow-x:auto;">
+    <table style="width:100%;">
+        <tr>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+        </tr>
+        <tr>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+        </tr>
+    </table>
+</div>
+
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Attire > Legs and Feet</center></h1>
+<div style="overflow-x:auto;">
+    <table style="width:100%;">
+        <tr>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+        </tr>
+        <tr>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+        </tr>
+    </table>
+</div>
+
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Attire > Shoes and Footwear</center></h1>
+<div style="overflow-x:auto;">
+    <table style="width:100%;">
+        <tr>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+        </tr>
+        <tr>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+        </tr>
+    </table>
+</div>
+
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Attire > Uniforms and Costumes</center></h1>
+<div style="overflow-x:auto;">
+    <table style="width:100%;">
+        <tr>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+        </tr>
+        <tr>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+        </tr>
+    </table>
+</div>
+
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Attire > Swimsuits and Bodysuits</center></h1>
+<div style="overflow-x:auto;">
+    <table style="width:100%;">
+        <tr>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+        </tr>
+        <tr>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+        </tr>
+    </table>
+</div>
+
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Attire > Traditional Clothing</center></h1>
+<div style="overflow-x:auto;">
+    <table style="width:100%;">
+        <tr>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+            <th><textarea disabled rows="1">placeholder</textarea></th>
+        </tr>
+        <tr>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+            <td><img height="340px" src=images/placeholder.jpg></img></img></td>
+        </tr>
+    </table>
+</div>
+
+<h1 style="font-size: 40px; margin-bottom: 8px;"><center>Character Styles</center></h1>
+<div style="overflow-x:auto;">
+    <table style="width:100%;">
+        <tr>
+            <th><textarea disabled rows="1">Aiko</textarea></th>
+            <th><textarea disabled rows="1">Brittany</textarea></th>
+            <th><textarea disabled rows="1">C</textarea></th>
+            <th><textarea disabled rows="1">D</textarea></th>
+            <th><textarea disabled rows="1">Eli ♂</textarea></th>
+            <th><textarea disabled rows="1">Fumiko</textarea></th>
+            <th><textarea disabled rows="1">Genevieve</textarea></th>
+            <th><textarea disabled rows="1">Hina</textarea></th>
+        </tr>
+        <tr>
+            <td><details><summary><img height="340px" src=images/characters/aiko.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">light brown hair, long hair, purple eyes, lips, medium breasts, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/brittany.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">black hair, ponytail, hime cut, red eyes, lips, toned, large breasts, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/eli.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">pink hair, short hair, green eyes, lips, femboy, feminine, skinny, (1boy)
+Negative: (1girl, breasts), muscular male</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/fumiko.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">purple hair, double bun, long hair, red eyes, lips, evil, medium breasts, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/genevieve.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">dark brown hair, french braid, brown eyes, lips, huge breasts, narrow waist, mature female, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/hina.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">teenage, black hair, hair between eyes, short hair, green eyes, lips, petite, small breasts, 1girl</textarea></details></td>
+        </tr>
+        <tr>
+            <th><textarea disabled rows="1">Ivy</textarea></th>
+            <th><textarea disabled rows="1">Joy</textarea></th>
+            <th><textarea disabled rows="1">Kira</textarea></th>
+            <th><textarea disabled rows="1">L</textarea></th>
+            <th><textarea disabled rows="1">M</textarea></th>
+            <th><textarea disabled rows="1">N</textarea></th>
+            <th><textarea disabled rows="1">Ophelia</textarea></th>
+            <th><textarea disabled rows="1">Pyrti</textarea></th>
+        </tr>
+        <tr>
+            <td><details><summary><img height="340px" src=images/characters/ivy.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">green hair, short hair, black eyes, narrowed eyes, lips, toned, (muscular female:0.5), medium breasts, hair flower, rose, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/joy.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">blonde hair, twin braids, pink eyes, lips, toned, pointy ears, medium breasts, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/kira.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">blonde hair, twintails, blue eyes, lips, medium breasts, (wide hips, thick thighs:0.9), 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/ophelia.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">gothic, black hair, blunt bangs, bob cut, blue eyes, lips, pale skin, (black lips), large breasts, black choker, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/pyrti.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">black hair, short hair, yellow eyes, lips, petite, medium breasts, <lora:gobgirl:0.4> gobgirl, colored skin, (green skin), female goblin, pointy ears, (shortstack), 1girl</textarea></details></td>
+        </tr>
+        <tr>
+            <th><textarea disabled rows="1">Q</textarea></th>
+            <th><textarea disabled rows="1">Rin</textarea></th>
+            <th><textarea disabled rows="1">Satsuki</textarea></th>
+            <th><textarea disabled rows="1">T</textarea></th>
+            <th><textarea disabled rows="1">U</textarea></th>
+            <th><textarea disabled rows="1">V</textarea></th>
+            <th><textarea disabled rows="1">W</textarea></th>
+            <th><textarea disabled rows="1">Xena</textarea></th>
+        </tr>
+        <tr>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/rin.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">light blue hair, ahoge, short hair, black eyes, lips, toned, (petite:0.9), small breasts, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/satsuki.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">white hair, fox ears, messy hair, short hair with long locks, orange eyes, lips, fox girl, fox tail, small breasts, 1girl</textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/characters/xena.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22">burgundy hair, short hair, messy hair, aqua eyes, lips, (wide hips:0.9), medium breasts, 1girl</textarea></details></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th><textarea disabled rows="1">Y</textarea></th>
+            <th><textarea disabled rows="1">Z</textarea></th>
+            <th><textarea disabled rows="1">~</textarea></th>
+            <th><textarea disabled rows="1">~</textarea></th>
+            <th><textarea disabled rows="1">~</textarea></th>
+            <th><textarea disabled rows="1">~</textarea></th>
+            <th><textarea disabled rows="1">~</textarea></th>
+            <th><textarea disabled rows="1">~</textarea></th>
+        </tr>
+        <tr>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+            <td><details><summary><img height="340px" src=images/placeholder.jpg></img></summary><textarea disabled wrap="hard" rows="8" cols="22"></textarea></details></td>
+        </tr>
+    </table>
+</div>
+</details>
 
 </body>
 </html>
