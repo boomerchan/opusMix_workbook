@@ -133,8 +133,13 @@
     </section>
 
     <!-- Character Styles >  -->
-    <section id="characters">
+    <section id="character">
         <div style="overflow-x:auto;" id="characterContent"></div>
+    </section>
+
+    <!-- Character Styles >  -->
+    <section id="characters">
+        <div style="overflow-x:auto;" id="charactersContent"></div>
     </section>
 
     <script>
@@ -284,18 +289,32 @@
         xhrAttirePattern.send();
 
         // Load Characters CSV
-        var xhrCharacter = new XMLHttpRequest();
-        xhrCharacter.onreadystatechange = function () {
-            if (xhrCharacter.readyState === 4) {
-                if (xhrCharacter.status === 200) {
-                    displayCSV(xhrCharacter.responseText, '<h1><center>Characters</center></h1>', 'characterContent');
+        var xhrOCCharacter = new XMLHttpRequest();
+        xhrOCCharacter.onreadystatechange = function () {
+            if (xhrOCCharacter.readyState === 4) {
+                if (xhrOCCharacter.status === 200) {
+                    displayCSV(xhrOCCharacter.responseText, '<h1><center>OC Characters</center></h1>', 'characterContent');
                 } else {
                     console.log('Failed to load the Styles CSV file.');
                 }
             }
         };
-        xhrCharacter.open('GET', 'csv/character.csv', true);
+        xhrOCCharacter.open('GET', 'csv/character.csv', true);
+        xhrOCCharacter.send();        // Load Characters CSV
+        
+        var xhrCharacter = new XMLHttpRequest();
+        xhrCharacter.onreadystatechange = function () {
+            if (xhrCharacter.readyState === 4) {
+                if (xhrCharacter.status === 200) {
+                    displayCSV(xhrCharacter.responseText, '<h1><center>Characters (No Lora)</center></h1>', 'charactersContent');
+                } else {
+                    console.log('Failed to load the Styles CSV file.');
+                }
+            }
+        };
+        xhrCharacter.open('GET', 'csv/characters.csv', true);
         xhrCharacter.send();
     </script>
+    <p>Made by Boomer with ChatGPT for <a href="https://civitai.com/models/146212/opusmix">opusMix</a>. Copyright is for nerds. v1.0.2</p>
 </body>
 </html>
