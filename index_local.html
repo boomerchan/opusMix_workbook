@@ -80,7 +80,7 @@
 <body>
 
     <ul>
-        <li><a href="https://civitai.com/models/146212/opusmix">Download</a></li>
+        <li><a href="#characters">Characters</a></li>
         <li><a href="#pattern">Pattern</a></li>
         <li><a href="#footwear">Footwear</a></li>
         <li><a href="#bottomwear">Bottomwear</a></li>
@@ -282,7 +282,20 @@
         };
         xhrAttirePattern.open('GET', 'csv/attirePattern.csv', true);
         xhrAttirePattern.send();
+
+        // Load Characters CSV
+        var xhrCharacter = new XMLHttpRequest();
+        xhrCharacter.onreadystatechange = function () {
+            if (xhrCharacter.readyState === 4) {
+                if (xhrCharacter.status === 200) {
+                    displayCSV(xhrCharacter.responseText, '<h1><center>Characters</center></h1>', 'characterContent');
+                } else {
+                    console.log('Failed to load the Styles CSV file.');
+                }
+            }
+        };
+        xhrCharacter.open('GET', 'csv/character.csv', true);
+        xhrCharacter.send();
     </script>
-    <p>Made by Boomer with ChatGPT for <a href="https://civitai.com/models/146212/opusmix">opusMix</a>. Copyright is for nerds.</p>
 </body>
 </html>
