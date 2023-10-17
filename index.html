@@ -11,7 +11,7 @@
             border-radius: 5px;
             margin: 10px;
             padding: 10px;
-            width: 300px;
+            width: 240px;
             text-align: center;
             display: inline-block;
             vertical-align: top;
@@ -47,6 +47,9 @@
 
         h1 {
             text-align: center;
+            font-size: 48px;
+            margin-top: 60px;
+            margin-bottom: 10px;
         }
         
         h1,
@@ -68,7 +71,6 @@
         
         li a:hover {
             color: #E1CD00;
-            background-color: black;
         }
 
         textarea {
@@ -113,7 +115,7 @@
         <li><a href="#color-eye">Colors</a></li>
     </ul>
 
-    <div class="card" style="margin-top:60px;margin-left:auto;margin-right:auto;display:block">
+    <div class="card" style="margin-top:60px;margin-left:auto;margin-right:auto;display:block;width:300px">
         <h3>About</h3>
         <p>Download opusMix on <a href="https://civitai.com/models/146212/opusmix" target="_blank">Civitai</a> and <a href="https://huggingface.co/boomerchan/opusMix" target="_blank">Hugging Face</a>.
         <br><br>These images were generated with a short and simple prompt. For example: <br><code style="background-color:black;">&lt;lora:add_detail:0.4&gt; (anime), 1girl, {prompt word}</code>
@@ -514,7 +516,7 @@
 
                         html += '<div class="card">';
                         html += '<h3>' + title + '</h3>';
-                        html += '<img src="' + imageLocation + '" alt="' + title + '">';
+                        html += ''<img src="' + imageLocation + '" alt="' + title + '">';
                         html += '<textarea disabled rows="2">' + description + '</textarea>';
                         html += '</div>';
                     }
