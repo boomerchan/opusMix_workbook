@@ -1,14 +1,50 @@
-Aiko~images\characters\Aiko.jpg~{prompt}, light brown hair, long hair, purple eyes, lips, medium breasts, 1girl
-Brittany~images\characters\Brittany.jpg~{prompt}, black hair, ponytail, hime cut, red eyes, lips, toned, large breasts, 1girl
-Eli~images\characters\Eli.jpg~{prompt}, pink hair, short hair, green eyes, lips, femboy, feminine, skinny, (1boy) Negative: (1girl, breasts), muscular male
-Fumiko~images\characters\Fumiko.jpg~{prompt}, purple hair, double bun, long hair, red eyes, lips, evil, medium breasts, 1girl
-Genevieve~images\characters\Genevieve.jpg~{prompt}, dark brown hair, french braid, brown eyes, lips, huge breasts, narrow waist, mature female, 1girl
-Hina~images\characters\Hina.jpg~{prompt}, teenage, black hair, hair between eyes, short hair, green eyes, lips, petite, small breasts, 1girl
-Ivy~images\characters\Ivy.jpg~{prompt}, green hair, short hair, black eyes, narrowed eyes, lips, toned, (muscular female:0.5), medium breasts, hair flower, rose, 1girl
-Joy~images\characters\Joy.jpg~{prompt}, blonde hair, twin braids, pink eyes, lips, toned, pointy ears, medium breasts, 1girl
-Kira~images\characters\Kira.jpg~{prompt}, blonde hair, twintails, blue eyes, lips, medium breasts, (wide hips, thick thighs:0.9), 1girl
-Ophelia~images\characters\Ophelia.jpg~{prompt}, gothic, black hair, blunt bangs, bob cut, blue eyes, lips, pale skin, (black lips), large breasts, black choker, 1girl
-Pyrti~images\characters\Pyrti.jpg~{prompt}, black hair, short hair, yellow eyes, lips, petite, medium breasts, <lora:gobgirl:0.4> gobgirl, colored skin, (green skin), female goblin, pointy ears, (shortstack), 1girl
-Rin~images\characters\Rin.jpg~{prompt}, light blue hair, ahoge, short hair, black eyes, lips, toned, (petite:0.9), small breasts, 1girl
-Satsuki~images\characters\Satsuki.jpg~{prompt}, white hair, fox ears, messy hair, short hair with long locks, orange eyes, lips, fox girl, fox tail, small breasts, 1girl
-Xena~images\characters\Xena.jpg~{prompt}, burgundy hair, short hair, messy hair, aqua eyes, lips, (wide hips:0.9), medium breasts, 1girl
+Akagi~images\characters\resized\akagi_(kancolle).jpg~akagi \(kancolle\)
+Akemi Homura~images\characters\resized\akemi_homura.jpg~akemi homura
+Alice Margatroid~images\characters\resized\alice_margatroid.jpg~alice margatroid
+Artoria Pendragon~images\characters\resized\artoria_pendragon_(fate).jpg~artoria pendragon \(fate\)
+Asuka Langley~images\characters\resized\souryuu_asuka_langley.jpg~souryuu asuka langley
+Cirno~images\characters\resized\cirno.jpg~cirno
+Flandre Scarlet~images\characters\resized\flandre_scarlet.jpg~flandre scarlet
+Fujiwara No Mokou~images\characters\resized\fujiwara_no_mokou.jpg~fujiwara no mokou
+Ganyu~images\characters\resized\ganyu_(genshin_impact).jpg~ganyu \(genshin impact\)
+Hakurei Reimu~images\characters\resized\hakurei_reimu.jpg~hakurei reimu
+Hatsune Miku~images\characters\resized\hatsune_miku.jpg~hatsune miku
+Hibiki~images\characters\resized\hibiki_(kancolle).jpg~hibiki \(kancolle\)
+Hijiri Byakuren~images\characters\resized\hijiri_byakuren.jpg~hijiri byakuren
+Hong Meiling~images\characters\resized\hong_meiling.jpg~hong meiling
+Ibuki Suika~images\characters\resized\ibuki_suika.jpg~ibuki suika
+Inazuma~images\characters\resized\inazuma_(kancolle).jpg~inazuma \(kancolle\)
+Inubashiri Momiji~images\characters\resized\inubashiri_momiji.jpg~inubashiri momiji, animal ears
+Izayoi Sakuya~images\characters\resized\izayoi_sakuya.jpg~izayoi sakuya
+Kaenbyou Rin~images\characters\resized\kaenbyou_rin.jpg~kaenbyou rin, animal ears
+Kaga~images\characters\resized\kaga_(kancolle).jpg~kaga \(kancolle\)
+Kagamine Len~images\characters\resized\kagamine_len.jpg~kagamine len
+Kagamine Rin~images\characters\resized\kagamine_rin.jpg~kagamine rin
+Kaname Madoka~images\characters\resized\kaname_madoka.jpg~kaname madoka
+Kawashiro Nitori~images\characters\resized\kawashiro_nitori.jpg~kawashiro nitori
+Kazami Yuuka~images\characters\resized\kazami_yuuka.jpg~kazami yuuka
+Kirisame Marisa~images\characters\resized\kirisame_marisa.jpg~kirisame marisa
+Koakuma~images\characters\resized\koakuma.jpg~koakuma
+Kochiya Sanae~images\characters\resized\kochiya_sanae.jpg~kochiya sanae
+Komeiji Koishi~images\characters\resized\komeiji_koishi.jpg~komeiji koishi
+Komeiji Satori~images\characters\resized\komeiji_satori.jpg~komeiji satori
+Kongou~images\characters\resized\kongou_(kancolle).jpg~kongou \(kancolle\)
+Konpaku Youmu~images\characters\resized\konpaku_youmu.jpg~konpaku youmu
+Miki Sayaka~images\characters\resized\miki_sayaka.jpg~miki sayaka
+Moriya Suwako~images\characters\resized\moriya_suwako.jpg~moriya suwako
+Mystia Lorelei~images\characters\resized\mystia_lorelei.jpg~mystia lorelei
+Nazrin~images\characters\resized\nazrin.jpg~nazrin
+Patchouli Knowledge~images\characters\resized\patchouli_knowledge.jpg~patchouli knowledge
+Reisen Udongein Inaba~images\characters\resized\reisen_udongein_inaba.jpg~reisen udongein inaba
+Reiuji Utsuho~images\characters\resized\reiuji_utsuho.jpg~reiuji utsuho
+Remilia Scarlet~images\characters\resized\remilia_scarlet.jpg~remilia scarlet
+Rumia~images\characters\resized\rumia.jpg~rumia
+Saber~images\characters\resized\saber.jpg~saber
+Saigyouji Yuyuko~images\characters\resized\saigyouji_yuyuko.jpg~saigyouji yuyuko
+Shameimaru Aya~images\characters\resized\shameimaru_aya.jpg~shameimaru aya
+Shigure~images\characters\resized\shigure_(kancolle).jpg~shigure \(kancolle\)
+Shimakaze~images\characters\resized\shimakaze_(kancolle).jpg~shimakaze \(kancolle\)
+Tatara Kogasa~images\characters\resized\tatara_kogasa.jpg~tatara kogasa, heterochromia
+Tomoe Mami~images\characters\resized\tomoe_mami.jpg~tomoe mami
+Yakumo Ran~images\characters\resized\yakumo_ran.jpg~yakumo ran, animal ears
+Yakumo Yukari~images\characters\resized\yakumo_yukari.jpg~yakumo yukari
