@@ -1,0 +1,1 @@
+Full resolution images are no longer displayed on the webpage to preserve bandwidth and speed up loading times. I will keep them on the repo and continue to upload full resolution images for future categories to preserve the original SD metadata.
