@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <title>opusMix Workbook</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <style>
         .card {
             border: 1px solid #ccc;
@@ -108,20 +110,17 @@
         <li><a href="#attire-skin">Skin Tight</a></li>
         <li><a href="#attire-footwear">Footwear</a></li>
         <li><a href="#attire-pattern">Patterns</a></li>
+        <li><a href="#color-eye">Colors</a></li>
     </ul>
 
-    <br id="top"><br>
-
-    <center>
-        <div class="card">
-            <h3>About</h3>
-            <p>Download opusMix on <a href="https://civitai.com/models/146212/opusmix" target="_blank">Civitai</a> and <a href="https://huggingface.co/boomerchan/opusMix" target="_blank">Hugging Face</a>.
-            <br><br>Most of these images were generated with the following prompt:<br><code style="background-color:black;">&lt;lora:add_detail:0.4&gt; (anime), 1girl, {prompt word}</code>
-            <br><br>All of these prompt words were tested on ~10 generations and were included here only if they consistently represented the subject matter.
-            <br><br>Full-resolution previews with the original generation metadata can be found on this workbook's <a href="https://github.com/boomerchan/opusMix_workbook" target="_blank">GitHub</a> repo.
-            <br><br><b>Warning!</b> I did not include explicit nudity in this workbook, but some images are <b>NSFW</b>.</p>
-        </div>
-    </center>
+    <div class="card" style="margin-top:60px;margin-left:auto;margin-right:auto;display:block">
+        <h3>About</h3>
+        <p>Download opusMix on <a href="https://civitai.com/models/146212/opusmix" target="_blank">Civitai</a> and <a href="https://huggingface.co/boomerchan/opusMix" target="_blank">Hugging Face</a>.
+        <br><br>These images were generated with a short and simple prompt. For example: <br><code style="background-color:black;">&lt;lora:add_detail:0.4&gt; (anime), 1girl, {prompt word}</code>
+        <br><br>The prompt words were tested on ~10 generations and were included here only if they consistently represented the subject matter.
+        <br><br>Full-resolution previews with the original generation metadata can be found on this workbook's <a href="https://github.com/boomerchan/opusMix_workbook" target="_blank">GitHub</a> repo.
+        <br><br>Heads up! This workbook does not contain explicity nudity, but some images are <b>NSFW</b>.</p>
+    </div>
 
     <h1>Artists</h1>
     <div id="artist" class="grid-container"></div>
@@ -413,7 +412,119 @@
             });
     </script>
 
-    <p style="text-align:center; font-size:small">Made by Boomer with the help of ChatGPT. Copyright is for nerds. v2.0</p>
+    <h1>Colors</h1>
+    <div id="color-eye" class="grid-container"></div>
+    <script>
+        fetch('csv/color-eye.csv')
+            .then(response => response.text())
+            .then(text => {
+                const rows = text.split('\n');
+                const gridContainer = document.getElementById('color-eye');
+                let html = '';
+
+                rows.forEach(row => {
+                    const cols = row.split('~');
+                    if (cols.length === 3) {
+                        const title = cols[0];
+                        const imageLocation = cols[1];
+                        const description = cols[2];
+
+                        html += '<div class="card">';
+                        html += '<h3>' + title + '</h3>';
+                        html += '<img src="' + imageLocation + '" alt="' + title + '">';
+                        html += '<textarea disabled rows="2">' + description + '</textarea>';
+                        html += '</div>';
+                    }
+                });
+
+                gridContainer.innerHTML = html;
+            });
+    </script>
+    <div id="color-hair" class="grid-container"></div>
+    <script>
+        fetch('csv/color-hair.csv')
+            .then(response => response.text())
+            .then(text => {
+                const rows = text.split('\n');
+                const gridContainer = document.getElementById('color-hair');
+                let html = '';
+
+                rows.forEach(row => {
+                    const cols = row.split('~');
+                    if (cols.length === 3) {
+                        const title = cols[0];
+                        const imageLocation = cols[1];
+                        const description = cols[2];
+
+                        html += '<div class="card">';
+                        html += '<h3>' + title + '</h3>';
+                        html += '<img src="' + imageLocation + '" alt="' + title + '">';
+                        html += '<textarea disabled rows="2">' + description + '</textarea>';
+                        html += '</div>';
+                    }
+                });
+
+                gridContainer.innerHTML = html;
+            });
+    </script>
+    <div id="color-skin" class="grid-container"></div>
+    <script>
+        fetch('csv/color-skin.csv')
+            .then(response => response.text())
+            .then(text => {
+                const rows = text.split('\n');
+                const gridContainer = document.getElementById('color-skin');
+                let html = '';
+
+                rows.forEach(row => {
+                    const cols = row.split('~');
+                    if (cols.length === 3) {
+                        const title = cols[0];
+                        const imageLocation = cols[1];
+                        const description = cols[2];
+
+                        html += '<div class="card">';
+                        html += '<h3>' + title + '</h3>';
+                        html += '<img src="' + imageLocation + '" alt="' + title + '">';
+                        html += '<textarea disabled rows="2">' + description + '</textarea>';
+                        html += '</div>';
+                    }
+                });
+
+                gridContainer.innerHTML = html;
+            });
+    </script>
+
+    <!--<h1>Hairstyles</h1>
+    <div id="hairstyle" class="grid-container"></div>
+    <script>
+        fetch('csv/hairstyle.csv')
+            .then(response => response.text())
+            .then(text => {
+                const rows = text.split('\n');
+                const gridContainer = document.getElementById('hairstyle');
+                let html = '';
+
+                rows.forEach(row => {
+                    const cols = row.split('~');
+                    if (cols.length === 3) {
+                        const title = cols[0];
+                        const imageLocation = cols[1];
+                        const description = cols[2];
+
+                        html += '<div class="card">';
+                        html += '<h3>' + title + '</h3>';
+                        html += '<img src="' + imageLocation + '" alt="' + title + '">';
+                        html += '<textarea disabled rows="2">' + description + '</textarea>';
+                        html += '</div>';
+                    }
+                });
+
+                gridContainer.innerHTML = html;
+            });
+    </script>-->
+
+    <p style="text-align:center;font-size:small">Made by Boomer with the help of ChatGPT. Copyright is for nerds. v2.0.1</p>
 
 </body>
 
